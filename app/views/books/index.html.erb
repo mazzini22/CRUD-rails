@@ -1,13 +1,11 @@
 <p style="color: green"><%= notice %></p>
+
 <header>
 <h1>Books</h1>
 </header>
 
   <% @books.each do |book|%>
     <%= render book %>
-     <p>
-        <%= link_to "visualizar livro", book, class: "button-show" %>
-    </p>
   <% end %>
 
   <%= link_to "Cadastrar livro", new_book_path, class: "button-new" %>

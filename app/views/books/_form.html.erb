@@ -10,8 +10,12 @@
       </ul>
     </div>
   <% end %>
+
 <div class="conteiner">
-    <div class="body_content">
+<div class="body-image">
+<img src="<%= show_svg_imagem_path %>" alt="Imagem SVG">
+</div>
+    <div class="body-conteiner">
         <%= form.label :Titulo, class: "title-content" %>
         <%= form.text_field :title, placeholder: "Digite o título do livro", class: "label-content" %>
 
@@ -21,10 +25,11 @@
         <%= form.label :ano, class: "title-content" %>
         <%= form.text_field :year, placeholder: "Digite o ano do livro", class: "label-content" %>
           
+        <div class="button-create">
+          <%= form.submit %>
+        </div>
     </div>
-    <div class="button-create">
-        <%= form.submit %>
-      </div>
+    
   </div>
   <% end %>
 

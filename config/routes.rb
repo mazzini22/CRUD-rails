@@ -9,3 +9,9 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
 end
+
+Rails.application.routes.draw do
+  resources :books
+
+get '/images/undraw_learning_re_32qv.svg', to: 'images#show_svg', as: 'show_svg_imagem'
+end
