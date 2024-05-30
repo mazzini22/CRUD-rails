@@ -1,10 +1,12 @@
 <p style="color: green"><%= notice %></p>
+<header>
+ <h1>Livros cadastrados</h1>
+</header>
 
 <%= render @book %>
 
-<div>
-  <%= link_to "Edit this book", edit_book_path(@book) %> |
-  <%= link_to "Back to books", books_path %>
+    <%= link_to "Editar livro", edit_book_path(@book), class: "button-edit"  %> |
 
-  <%= button_to "Destroy this book", @book, method: :delete %>
-</div>
+    <%= link_to "catálagos livro", books_path, class: "button-back" %>
+
+    <%= button_to "Excluir livros", @book, method: :delete, class: "button-destroy" %>

@@ -10,23 +10,21 @@
       </ul>
     </div>
   <% end %>
+<div class="conteiner">
+    <div class="body_content">
+        <%= form.label :Titulo, class: "title-content" %>
+        <%= form.text_field :title, placeholder: "Digite o título do livro", class: "label-content" %>
 
-  <div>
-    <%= form.label :title, style: "display: block" %>
-    <%= form.text_field :title %>
-  </div>
+        <%= form.label :Descrição, class: "title-content" %>
+        <%= form.text_field :description, placeholder: "Faça uma breve descrição do livro", class: "label-content" %>
 
-  <div>
-    <%= form.label :description, style: "display: block" %>
-    <%= form.text_field :description %>
+        <%= form.label :ano, class: "title-content" %>
+        <%= form.text_field :year, placeholder: "Digite o ano do livro", class: "label-content" %>
+          
+    </div>
+    <div class="button-create">
+        <%= form.submit %>
+      </div>
   </div>
+  <% end %>
 
-  <div>
-    <%= form.label :year, style: "display: block" %>
-    <%= form.text_field :year %>
-  </div>
-
-  <div>
-    <%= form.submit %>
-  </div>
-<% end %>
