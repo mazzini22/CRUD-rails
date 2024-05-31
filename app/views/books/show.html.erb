@@ -3,10 +3,13 @@
  <h1>Livros cadastrados</h1>
 </header>
 
-<%= render @book %>
+<%= render partial: "book", locals: { book: @book, isShowing: true } %>
 
-    <%= link_to "Editar livro", edit_book_path(@book), class: "button-edit"  %> |
+<div class="show-buttons-container">
+    <%= link_to "Editar livro", edit_book_path(@book), class: "button-edit"  %>
 
-    <%= link_to "catálagos livro", books_path, class: "button-back" %>
+    <%= link_to "Voltar para o catálogo", books_path, class: "button-back" %>
 
     <%= button_to "Excluir livros", @book, method: :delete, class: "button-destroy" %>
+</div>
+

@@ -1,10 +1,10 @@
 <div class="body">
   <div class="conteiner">
-  <div class="body-image">
-    <img src="<%= show_svg_imagem_path %>" alt="Imagem SVG">
-  </div>
+    <div class="body-image">
+      <img src="<%= show_svg_imagem_path %>" alt="Imagem SVG">
+    </div>
 
-  <div class="body-conteiner">
+    <div class="body-conteiner">
       <div class="label-input">
         <strong>Title:</strong>
         <%= book.title %>
@@ -20,7 +20,9 @@
         <%= book.description %>
       </div>
 
-      <%= link_to "visualizar livro", book, class: "button-show" %>
+      <% if !isShowing %>
+        <%= link_to "visualizar livro", book, class: "button-show" %>
+      <% end %>
+    </div>
   </div>
-</div>
 </div>

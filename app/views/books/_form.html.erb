@@ -1,19 +1,17 @@
+<%= form_with(model: book) do |form| %>
+  <% if book.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(book.errors.count, "error") %> prohibited this book from being saved:</h2>
+      
+      <ul>
+        <% book.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
 
-  <%= form_with(model: book) do |form| %>
-    <% if book.errors.any? %>
-      <div style="color: red">
-        <h2><%= pluralize(book.errors.count, "error") %> prohibited this book from being saved:</h2>
-        
-        <ul>
-          <% book.errors.each do |error| %>
-            <li><%= error.full_message %></li>
-          <% end %>
-        </ul>
-      </div>
-    <% end %>
-
-    
-
+  <div class="body">
     <div class="conteiner">
       <div class="body-image">
         <img src="<%= show_svg_imagem_path %>" alt="Imagem SVG">
@@ -21,18 +19,16 @@
 
       <div class="body-conteiner">
         <%= form.label :Titulo, class: "label-input" %>
-        <%= form.text_field :title, placeholder: "Digite o título do livro", class: "label-input" %>
+        <%= form.text_field :title, placeholder: "Digite o título do livro", class: "input" %>
 
         <%= form.label :Descrição, class: "label-input" %>
-        <%= form.text_field :description, placeholder: "Faça uma breve descrição do livro", class: "label-input" %>
+        <%= form.text_area :description, placeholder: "Faça uma breve descrição do livro", class: "input", rows: 5 %>
 
         <%= form.label :ano, class: "label-input" %>
-        <%= form.text_field :year, placeholder: "Digite o ano do livro", class: "label-input" %>
+        <%= form.text_field :year, placeholder: "Digite o ano do livro", class: "input" %>
                 
-        <div class="button-create">
-          <%= form.submit %>
-        </div>
+        <button class="button-create" type="submit">Criar</button>
       </div>
     </div>
-  <% end %>
-
+  </div>
+<% end %>

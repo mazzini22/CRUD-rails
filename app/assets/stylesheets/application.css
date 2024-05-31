@@ -14,160 +14,173 @@
  *= require_self
  */
 
-
- /**/
- *{
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
-   font-family: "poppings", sans-serif;
- }
-
-
-.body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.conteiner{
-    width: 80%;
-    right: 80vh;
-    display: flex;
-    margin: 15px 50px 20px 50px;
-    border-radius: 40px;
-    padding: 10px;
-    background-color: #0c0ce94d;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 212);
- }
- .body-conteiner{
-    width: 50%;
-    right: 100px;
-    display: block;
-    justify-content: left;
-    align-items: normal;
- }
-.body-image{
-    width: 50%;
-    display: flex;
+/**/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "poppings", sans-serif;
 }
 
-.body-image img{
-    display: flex;
-    justify-content: center;
-    margin: 5px 50px 5px 50px ;
-    width: 25rem;
-
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-.label-input{
-    display: flex;
-    flex-direction: wrap;
-    margin: 25px 0px 25px 0px;
-    width: 100%;
+.conteiner {
+  width: 80%;
+  right: 80vh;
+  display: flex;
+  margin: 15px 50px 20px 50px;
+  border-radius: 40px;
+  padding: 10px;
+  background-color: #0c0ce94d;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
 }
-
-header h1::after{
-  content:'';
+.body-conteiner {
+  width: 50%;
+  right: 100px;
   display: block;
-   width: 5rem;
-   height: 0.3rem;
-   background-color: violet;
-   margin: 0 auto;
-   position: absolute;
+  justify-content: left;
+  align-items: normal;
+}
+.body-image {
+  width: 50%;
+  display: flex;
+}
+
+.body-image img {
+  display: flex;
+  justify-content: center;
+  margin: 5px 50px 5px 50px;
+  width: 25rem;
+}
+
+.label-input {
+  display: flex;
+  flex-direction: wrap;
+  margin: 25px 0px 25px 0px;
+  width: 100%;
+  resize: vertical;
+}
+
+.input {
+  display: flex;
+  flex-direction: wrap;
+  margin: 25px 0px 25px 0px;
+  width: 100%;
+  resize: vertical;
+  border-radius: 3px;
+  border: none;
+  padding: 5px 10px;
+}
+
+header h1::after {
+  content: "";
+  display: block;
+  width: 5rem;
+  height: 0.3rem;
+  background-color: violet;
+  margin: 0 auto;
+  position: absolute;
   border-radius: 10px;
 }
 
-
-.label-content :hover{
+.label-content :hover {
   background-color: #feeeee75;
 }
 
 /*buttons*/
-.button-edit{
-  width: 100%;
+.button-edit {
   border: none;
   border-radius: 15px;
-  background-color:rebeccapurple;
+  background-color: rebeccapurple;
   padding: 10px 20px;
   cursor: pointer;
-  display: flex;
+  color: #ffff;
+  text-decoration: none;
+  transition: 0.5s;
 }
-.button-edit:hover{
+.button-edit:hover {
   background-color: #6b63fff1;
 }
-.button-edit a{
+.button-edit a {
   text-decoration: none;
   font-size: 0.91rem;
   font-weight: 500;
   color: #ffff;
 }
-.button-back{
-  width: 100%;
+.button-back {
   border: none;
   border-radius: 15px;
-  background-color:rebeccapurple;
+  background-color: rebeccapurple;
   padding: 10px 20px;
   cursor: pointer;
-  display: flex;
+  color: #ffff;
+  text-decoration: none;
+  transition: 0.5s;
 }
-.button-back:hover{
+.button-back:hover {
   background-color: #6b63fff1;
 }
-.button-back a{
+.button-back a {
   text-decoration: none;
   font-size: 0.91rem;
   font-weight: 500;
   color: #ffff;
 }
-.button-show{
-  width: 100%;
+.button-show {
   border: none;
   border-radius: 15px;
-  background-color:rebeccapurple;
+  background-color: rebeccapurple;
   padding: 10px 20px;
   cursor: pointer;
-  display: flex;
+  color: #ffff;
+  text-decoration: none;
+  transition: 0.5s;
 }
-.button-show:hover{
+.button-show:hover {
   background-color: #6b63fff1;
 }
-.button-show a{
+.button-show a {
   text-decoration: none;
   font-size: 0.91rem;
   font-weight: 500;
   color: #ffff;
 }
-.button-destroy{
-  width: 100%;
+.button-destroy {
   border: none;
   border-radius: 15px;
-  background-color:rebeccapurple;
+  background-color: rebeccapurple;
   padding: 10px 20px;
   cursor: pointer;
-  display: flex;
+  color: #ffff;
+  text-decoration: none;
+  transition: 0.5s;
 }
-.button-destroy:hover{
+.button-destroy:hover {
   background-color: #6b63fff1;
 }
-.button-destroy a{
+.button-destroy a {
   text-decoration: none;
   font-size: 0.91rem;
   font-weight: 500;
   color: #ffff;
 }
-.button-new{
-  width: 100%;
+.button-new {
   border: none;
   border-radius: 15px;
-  background-color:rebeccapurple;
+  background-color: rebeccapurple;
   padding: 10px 20px;
   cursor: pointer;
-  display: flex;
+  color: #ffff;
+  text-decoration: none;
+  transition: 0.5s;
 }
-.button-new:hover{
+.button-new:hover {
   background-color: #6b63fff1;
 }
-.button-new a{
+.button-new a {
   text-decoration: none;
   font-size: 0.91rem;
   font-weight: 500;
@@ -176,7 +189,7 @@ header h1::after{
 
 .back-to-books-btn:hover {
   border-radius: 15px;
-  background-color:rebeccapurple;
+  background-color: rebeccapurple;
   color: #ffffff;
   padding: 10px 20px;
   cursor: pointer;
@@ -187,27 +200,34 @@ header h1::after{
 }
 .button-create {
   border-radius: 15px;
-  background-color:rebeccapurple;
+  background-color: rebeccapurple;
   color: #ffffff;
   padding: 10px 20px;
   width: 100px;
   cursor: pointer;
   text-decoration: none;
-  display: flex;
   justify-content: center;
   justify-items: auto;
-  
+  border: none;
+  transition: 0.5s;
 }
-.button-create:hover{
+
+.button-create:hover {
   background-color: #6b63fff1;
 }
-.button-create a{
+.button-create a {
   text-decoration: none;
   font-size: 0.91rem;
   font-weight: 500;
   color: #ffff;
 }
 
-.button-back link-to{
+.button-back link-to {
   color: #ffff;
+}
+
+.show-buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
 }

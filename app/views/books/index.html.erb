@@ -3,9 +3,12 @@
 <header>
 <h1>Books</h1>
 </header>
+<div class="show-buttons-container">
+  <%= link_to "Cadastrar livro", new_book_path, class: "button-new" %>
+</div>
 
   <% @books.each do |book|%>
-    <%= render book %>
+    <%= render partial: "book", locals: { book: book, isShowing: false } %>
   <% end %>
 
-  <%= link_to "Cadastrar livro", new_book_path, class: "button-new" %>
+

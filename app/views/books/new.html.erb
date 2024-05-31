@@ -1,9 +1,8 @@
 <header>
 <h1>New book</h1>
+<%= link_to "catálagos livro", books_path, class: "button-new" %>
+
 </header>
 <%= render "form", book: @book %>
 
 <br>
-<div class= "button-back">
-    <%= link_to "catálagos livro", books_path %>
-</div>

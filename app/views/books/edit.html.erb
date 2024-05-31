@@ -5,10 +5,7 @@
 
 <br>
 
-  <div class="button-show">
-    <%= link_to "visualizar livro", @book %> |
-  </div>
-  <div class="button-back">
-    <%= link_to "Back to books", books_path %>
-  </div
-
+<div class="show-buttons-container">
+    <%= link_to "visualizar livro", @book, class: "button-show" %>
+    <%= link_to "Voltar para o catálogo", books_path, class: "button-back" %>
+</div>
