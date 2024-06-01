@@ -1,9 +1,8 @@
-<h1>New book</h1>
+<header>
+  <h1>Novo livro</h1>
+  <%= link_to "Catálago de livros", books_path, class: "button-new" %>
+</header>
 
 <%= render "form", book: @book %>
 
 <br>
-
-<div>
-  <%= link_to "Back to books", books_path %>
-</div>

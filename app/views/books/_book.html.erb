@@ -1,17 +1,28 @@
-<div id="<%= dom_id book %>">
-  <p>
-    <strong>Title:</strong>
-    <%= book.title %>
-  </p>
+<div class="body">
+  <div class="conteiner">
+    <div class="body-image">
+      <%= image_tag 'book.png', size: "150x300" %>
+    </div>
 
-  <p>
-    <strong>Description:</strong>
-    <%= book.description %>
-  </p>
+    <div class="body-conteiner">
+      <div class="label-input">
+        <strong>Título: </strong>
+        <%= book.title %>
+      </div>
 
-  <p>
-    <strong>Year:</strong>
-    <%= book.year %>
-  </p>
+      <div class="label-input">
+        <strong>Ano: </strong>
+        <%= book.year %>
+      </div>
 
+      <div class="label-input">
+        <strong>Descrição: </strong>
+        <%= book.description %>
+      </div>
+
+      <% if !isShowing %>
+        <%= link_to "Visualizar livro", book, class: "button-show" %>
+      <% end %>
+    </div>
+  </div>
 </div>
