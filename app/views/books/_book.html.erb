@@ -1,27 +1,27 @@
 <div class="body">
   <div class="conteiner">
     <div class="body-image">
-      <img src="<%= show_svg_imagem_path %>" alt="Imagem SVG">
+      <%= image_tag 'book.png', size: "150x300" %>
     </div>
 
     <div class="body-conteiner">
       <div class="label-input">
-        <strong>Title:</strong>
+        <strong>Título: </strong>
         <%= book.title %>
       </div>
 
       <div class="label-input">
-        <strong>Year:</strong>
+        <strong>Ano: </strong>
         <%= book.year %>
       </div>
 
       <div class="label-input">
-        <strong>Description:</strong>
+        <strong>Descrição: </strong>
         <%= book.description %>
       </div>
 
       <% if !isShowing %>
-        <%= link_to "visualizar livro", book, class: "button-show" %>
+        <%= link_to "Visualizar livro", book, class: "button-show" %>
       <% end %>
     </div>
   </div>

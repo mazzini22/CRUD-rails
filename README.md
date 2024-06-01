@@ -1,24 +1,37 @@
-# README
+# Documentação para Rodar a Aplicação Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Pré-requisitos
 
-Things you may want to cover:
+Antes de começar, certifique-se de ter o seguinte instalado:
 
-* Ruby version
+1. **Ruby:** Versão recomendada é a 3.2.3.
+6. **Banco de Dados:** SQLite.
 
-* System dependencies
+## Passos para Configurar e Rodar a Aplicação
 
-* Configuration
+### 1. Instalar dependências
 
-* Database creation
+No diretório raiz da aplicação, rode:
 
-* Database initialization
+```sh
+bundler install
+```
 
-* How to run the test suite
+### 2. Criar database no SQLite
 
-* Services (job queues, cache servers, search engines, etc.)
+Crie o banco de dados e rode as migrações:
 
-* Deployment instructions
+```sh
+rails db:create
+rails db:migrate
+```
 
-* ...
+### 3. Iniciar servidor da aplicação
+
+Para rodar a aplicação, rode:
+
+```sh
+rails server
+```
+
+[A aplicação estará rodando nesse endereço](http://localhost:3000/books)

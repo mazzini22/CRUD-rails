@@ -1,14 +1,12 @@
 <p style="color: green"><%= notice %></p>
 
 <header>
-<h1>Books</h1>
+  <h1>Livros</h1>
 </header>
 <div class="show-buttons-container">
   <%= link_to "Cadastrar livro", new_book_path, class: "button-new" %>
 </div>
 
-  <% @books.each do |book|%>
-    <%= render partial: "book", locals: { book: book, isShowing: false } %>
-  <% end %>
-
-
+<% @books.each do |book|%>
+  <%= render partial: "book", locals: { book: book, isShowing: false } %>
+<% end %>
